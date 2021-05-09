@@ -43,6 +43,11 @@ function run() {
     postUIConfirm(rowsDeleted);
 }
 
+/**
+ * Display alert message to user as how many rows that's deleted
+ *
+ * @param rowsDeleted
+ */
 function postUIConfirm(rowsDeleted) {
     var ui = SpreadsheetApp.getUi();
     ui.alert("Operation complete. There were " + rowsDeleted + " rows deleted.")
